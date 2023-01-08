@@ -5,8 +5,12 @@ TRUNCATE TABLE artists RESTART IDENTITY; -- replace with your own table name.
 -- Below this line there should only be `INSERT` statements.
 -- Replace these statements with your own seed data.
 
-INSERT INTO artists (name, genre) VALUES ('Pixies', 'Rock');
-INSERT INTO artists (name, genre) VALUES ('ABBA', 'Pop');
+INSERT INTO "public"."artists" ("name", "genre") VALUES
+('Pixies', 'Rock'),
+('ABBA', 'Pop'),
+('Taylor Swift', 'Pop'),
+('Nina Simone', 'Pop');
+
 
 -- -- -------------------------------------------------------------
 -- -- TablePlus 4.5.0(396)
